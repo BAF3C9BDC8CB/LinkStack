@@ -62,17 +62,34 @@
                 border-radius: 999px;
                 background: rgba(255, 255, 255, 0.92);
                 color: #334155;
-                font-size: 1.35rem;
-                line-height: 1;
                 cursor: pointer;
                 box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
                 transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+                padding: 0;
             }
 
             .qr-contact-modal-close:hover {
                 transform: scale(1.04);
                 background: #0f172a;
                 color: #ffffff;
+            }
+
+            .qr-contact-modal-close::before,
+            .qr-contact-modal-close::after {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 2px;
+                border-radius: 999px;
+                background: currentColor;
+            }
+
+            .qr-contact-modal-close::before {
+                transform: rotate(45deg);
+            }
+
+            .qr-contact-modal-close::after {
+                transform: rotate(-45deg);
             }
 
             .qr-contact-modal-body {
@@ -191,7 +208,7 @@
     <div class="qr-contact-modal-card" role="dialog" aria-modal="true" aria-labelledby="{{ $modalId }}-title">
         <div class="qr-contact-modal-header">
             <h3 class="qr-contact-modal-title" id="{{ $modalId }}-title">{{ $link->title }}</h3>
-            <button type="button" class="qr-contact-modal-close" aria-label="关闭" data-qr-contact-close>&times;</button>
+            <button type="button" class="qr-contact-modal-close" aria-label="关闭" data-qr-contact-close></button>
         </div>
         <div class="qr-contact-modal-body">
             <img class="qr-contact-modal-image" src="{{ url($link->qr_image_path) }}" alt="{{ $link->title }} 二维码">

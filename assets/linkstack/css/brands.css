@@ -1467,3 +1467,123 @@ button.button-scribd{
 .button.button-kuaishou:focus {
   filter: brightness(90%);
 }
+
+/* WeCom */
+.button.button-qiyeweixin {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #07c160 0%, #2b7cff 100%);
+}
+.button.button-qiyeweixin:hover,
+.button.button-qiyeweixin:focus {
+  filter: brightness(90%);
+}
+
+/* Weibo */
+.button.button-weibo {
+  color: #FFFFFF;
+  background-color: #e6162d;
+}
+.button.button-weibo:hover,
+.button.button-weibo:focus {
+  filter: brightness(90%);
+}
+
+/* Zhihu */
+.button.button-zhihu {
+  color: #FFFFFF;
+  background-color: #1677ff;
+}
+.button.button-zhihu:hover,
+.button.button-zhihu:focus {
+  filter: brightness(90%);
+}
+
+/* Douban */
+.button.button-douban {
+  color: #FFFFFF;
+  background-color: #2d963d;
+}
+.button.button-douban:hover,
+.button.button-douban:focus {
+  filter: brightness(90%);
+}
+
+/* Taobao */
+.button.button-taobao {
+  color: #FFFFFF;
+  background-color: #ff5000;
+}
+.button.button-taobao:hover,
+.button.button-taobao:focus {
+  filter: brightness(90%);
+}
+
+/* Xianyu */
+.button.button-xianyu {
+  color: #1f2937;
+  background-color: #ffe600;
+}
+.button.button-xianyu:hover,
+.button.button-xianyu:focus {
+  filter: brightness(90%);
+}
+
+/* Meituan */
+.button.button-meituan {
+  color: #111827;
+  background-color: #ffd100;
+}
+.button.button-meituan:hover,
+.button.button-meituan:focus {
+  filter: brightness(90%);
+}
+
+/* Dazhong Dianping */
+.button.button-dazhongdianping {
+  color: #FFFFFF;
+  background-color: #ff6633;
+}
+.button.button-dazhongdianping:hover,
+.button.button-dazhongdianping:focus {
+  filter: brightness(90%);
+}
+
+/* JD */
+.button.button-jingdong {
+  color: #FFFFFF;
+  background-color: #e2231a;
+}
+.button.button-jingdong:hover,
+.button.button-jingdong:focus {
+  filter: brightness(90%);
+}
+
+/* Pinduoduo */
+.button.button-pinduoduo {
+  color: #FFFFFF;
+  background-color: #e02e24;
+}
+.button.button-pinduoduo:hover,
+.button.button-pinduoduo:focus {
+  filter: brightness(90%);
+}
+
+/* Xunlei */
+.button.button-xunlei {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1677ff 0%, #ffd000 100%);
+}
+.button.button-xunlei:hover,
+.button.button-xunlei:focus {
+  filter: brightness(90%);
+}
+
+/* Quark */
+.button.button-quark {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+}
+.button.button-quark:hover,
+.button.button-quark:focus {
+  filter: brightness(90%);
+}

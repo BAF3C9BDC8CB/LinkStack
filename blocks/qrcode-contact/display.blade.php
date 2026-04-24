@@ -26,58 +26,108 @@
             }
 
             .qr-contact-modal-card {
+                position: relative;
                 width: min(100%, 420px);
-                border-radius: 24px;
-                background: #ffffff;
+                border-radius: 28px;
+                background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
                 box-shadow: 0 24px 80px rgba(15, 23, 42, 0.28);
                 overflow: hidden;
             }
 
             .qr-contact-modal-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 16px;
-                padding: 20px 22px 12px;
+                padding: 28px 28px 8px;
+                text-align: center;
             }
 
             .qr-contact-modal-title {
                 margin: 0;
                 color: #0f172a;
-                font-size: 1.1rem;
+                font-size: 1.15rem;
                 font-weight: 700;
+                line-height: 1.4;
+                padding: 0 44px;
+                word-break: break-word;
             }
 
             .qr-contact-modal-close {
-                border: 0;
-                background: transparent;
-                color: #475569;
-                font-size: 1.6rem;
+                position: absolute;
+                top: 14px;
+                right: 14px;
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #e2e8f0;
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.92);
+                color: #334155;
+                font-size: 1.35rem;
                 line-height: 1;
                 cursor: pointer;
+                box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+                transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+            }
+
+            .qr-contact-modal-close:hover {
+                transform: scale(1.04);
+                background: #0f172a;
+                color: #ffffff;
             }
 
             .qr-contact-modal-body {
-                padding: 8px 22px 24px;
+                padding: 10px 28px 28px;
                 text-align: center;
             }
 
             .qr-contact-modal-image {
                 display: block;
-                width: min(100%, 280px);
+                width: min(100%, 296px);
                 margin: 0 auto;
-                border-radius: 18px;
+                border-radius: 22px;
                 border: 1px solid #e2e8f0;
-                padding: 10px;
+                padding: 12px;
                 background: #fff;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
             }
 
             .qr-contact-modal-description {
-                margin: 16px 0 0;
+                margin: 18px 0 0;
                 color: #475569;
-                font-size: 0.95rem;
-                line-height: 1.65;
+                font-size: 0.96rem;
+                line-height: 1.7;
                 white-space: pre-line;
+            }
+
+            @media (max-width: 640px) {
+                .qr-contact-modal-overlay {
+                    padding: 18px;
+                }
+
+                .qr-contact-modal-card {
+                    border-radius: 24px;
+                }
+
+                .qr-contact-modal-header {
+                    padding: 24px 20px 6px;
+                }
+
+                .qr-contact-modal-title {
+                    font-size: 1.05rem;
+                    padding: 0 42px 0 8px;
+                    text-align: left;
+                }
+
+                .qr-contact-modal-close {
+                    top: 12px;
+                    right: 12px;
+                    width: 38px;
+                    height: 38px;
+                }
+
+                .qr-contact-modal-body {
+                    padding: 8px 20px 22px;
+                }
             }
         </style>
         <script>

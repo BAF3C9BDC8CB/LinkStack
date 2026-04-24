@@ -1,0 +1,6 @@
+id: 8
+typename: qrcode-contact
+title: QR Code Contact
+description: Show a button that opens a QR code popup
+icon: "bi bi-qr-code"
+custom_html: true

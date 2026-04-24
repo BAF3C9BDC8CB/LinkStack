@@ -24,7 +24,7 @@
                         <h3 class="card-header"><i class="bi bi-journal-plus"> @if($LinkID !== 0) {{__('messages.Edit')}} @else {{__('messages.Add')}} @endif {{__('messages.Block')}}</i></h3>
                     
                         <div class='card-body'>
-                            <form action="{{ route('addLink') }}" method="post" id="my-form">
+                            <form action="{{ route('addLink') }}" method="post" id="my-form" enctype="multipart/form-data">
                                 @method('POST')
                                 @csrf
                                 <input type='hidden' name='linkid' value="{{ $LinkID }}" />

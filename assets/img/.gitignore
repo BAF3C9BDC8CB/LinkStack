@@ -1,4 +1,6 @@
 *
+!qrcodes/
+!qrcodes/.gitignore
 !.gitignore
 !user.png
 !loading.gif

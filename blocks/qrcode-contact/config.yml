@@ -1,6 +1,6 @@
 id: 8
 typename: qrcode-contact
-title: QR Code Contact
-description: Show a button that opens a QR code popup
+title: 二维码联系卡
+description: 显示一个按钮，点击后弹出二维码窗口
 icon: "bi bi-qr-code"
 custom_html: true

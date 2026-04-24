@@ -1327,3 +1327,143 @@ button.button-scribd{
 .button.button-threads:focus {
   filter: brightness(90%);
 }
+
+/* WeChat */
+.button.button-wechat {
+  color: #FFFFFF;
+  background-color: #07C160;
+}
+.button.button-wechat:hover,
+.button.button-wechat:focus {
+  filter: brightness(90%);
+}
+
+/* QQ */
+.button.button-qq {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1da1f2 0%, #0d6efd 100%);
+}
+.button.button-qq:hover,
+.button.button-qq:focus {
+  filter: brightness(90%);
+}
+
+/* QQ Music */
+.button.button-qqmusic {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1ed760 0%, #12b64f 100%);
+}
+.button.button-qqmusic:hover,
+.button.button-qqmusic:focus {
+  filter: brightness(90%);
+}
+
+/* NetEase Cloud Music */
+.button.button-neteasecloudmusic {
+  color: #FFFFFF;
+  background-color: #d43c33;
+}
+.button.button-neteasecloudmusic:hover,
+.button.button-neteasecloudmusic:focus {
+  filter: brightness(90%);
+}
+
+/* DingTalk */
+.button.button-dingtalk {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1677ff 0%, #0b5bd3 100%);
+}
+.button.button-dingtalk:hover,
+.button.button-dingtalk:focus {
+  filter: brightness(90%);
+}
+
+/* Feishu */
+.button.button-feishu {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #00c2ff 0%, #3370ff 55%, #7b61ff 100%);
+}
+.button.button-feishu:hover,
+.button.button-feishu:focus {
+  filter: brightness(90%);
+}
+
+/* Baidu Netdisk */
+.button.button-baidunetdisk {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #2768ff 0%, #1c4fd7 100%);
+}
+.button.button-baidunetdisk:hover,
+.button.button-baidunetdisk:focus {
+  filter: brightness(90%);
+}
+
+/* Aliyun Drive */
+.button.button-aliyundrive {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #6c5cff 0%, #4b38ff 100%);
+}
+.button.button-aliyundrive:hover,
+.button.button-aliyundrive:focus {
+  filter: brightness(90%);
+}
+
+/* 115 Pan */
+.button.button-pan115 {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #28a5ff 0%, #0072ff 100%);
+}
+.button.button-pan115:hover,
+.button.button-pan115:focus {
+  filter: brightness(90%);
+}
+
+/* 123 Pan */
+.button.button-pan123 {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #ff9f1a 0%, #ff7a00 100%);
+}
+.button.button-pan123:hover,
+.button.button-pan123:focus {
+  filter: brightness(90%);
+}
+
+/* Xiaohongshu */
+.button.button-xiaohongshu {
+  color: #FFFFFF;
+  background-color: #ff2442;
+}
+.button.button-xiaohongshu:hover,
+.button.button-xiaohongshu:focus {
+  filter: brightness(90%);
+}
+
+/* Bilibili */
+.button.button-bilibili {
+  color: #FFFFFF;
+  background-color: #00a1d6;
+}
+.button.button-bilibili:hover,
+.button.button-bilibili:focus {
+  filter: brightness(90%);
+}
+
+/* Douyin */
+.button.button-douyin {
+  color: #FFFFFF;
+  background-color: #111111;
+}
+.button.button-douyin:hover,
+.button.button-douyin:focus {
+  filter: brightness(90%);
+}
+
+/* Kuaishou */
+.button.button-kuaishou {
+  color: #FFFFFF;
+  background-color: #ff6a00;
+}
+.button.button-kuaishou:hover,
+.button.button-kuaishou:focus {
+  filter: brightness(90%);
+}

@@ -231,19 +231,22 @@ class UserController extends Controller
             $linkTypePath = base_path("blocks/{$linkType->typename}/handler.php");
             if (file_exists($linkTypePath)) {
                 include $linkTypePath;
-                $result = handleLinkType($request, $linkType);
+                $result = handleLinkType($request, $linkType, false);
                 
                 // Extract rules and linkData from the result
                 $rules = $result['rules'];
-                $linkData = $result['linkData'];
             
                 // Validate the request
-                $validator = Validator::make($request->all(), $rules);
+                $validationData = array_merge($request->all(), $request->allFiles());
+                $validator = Validator::make($validationData, $rules);
 
                 // Check if validation fails
                 if ($validator->fails()) {
                     return back()->withErrors($validator)->withInput();
                 }
+
+                $result = handleLinkType($request, $linkType, true);
+                $linkData = $result['linkData'];
 
                 $linkData['button_id'] = $linkData['button_id'] ?? 1; // Set 'button_id' unless overwritten by handleLinkType
                 $linkData['type'] = $linkType->typename; // Ensure 'type' is included in $linkData

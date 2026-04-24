@@ -8,9 +8,10 @@ use Illuminate\Support\Facades\Auth;
  *
  * @param \Illuminate\Http\Request $request
  * @param mixed $linkType
+ * @param bool $processUpload
  * @return array
  */
-function handleLinkType($request, $linkType)
+function handleLinkType($request, $linkType, $processUpload = true)
 {
     $rules = [
         'title' => [
@@ -38,7 +39,7 @@ function handleLinkType($request, $linkType)
 
     $qrImagePath = $request->input('current_qr_image', '');
 
-    if ($request->hasFile('qr_image')) {
+    if ($processUpload && $request->hasFile('qr_image')) {
         $uploadDir = base_path('assets/img/qrcodes');
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0755, true);
